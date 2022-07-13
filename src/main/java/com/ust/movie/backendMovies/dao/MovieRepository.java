@@ -17,7 +17,7 @@ import java.util.Optional;
         @Autowired
         private JdbcTemplate jdbcTemplate;
 
-      //  private static List<Movie> movie = new ArrayList<>();
+        private static List<Movie> movie = new ArrayList<>();
 
         @Override
         public int insertMovie(int id, Movie movie) {
