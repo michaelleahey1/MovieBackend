@@ -1,18 +1,20 @@
 package com.ust.movie.backendMovies.model;
 
 public class Movie {
-    private int id;
+    private int mid;
     private String Title;
     private int Debut;
     private String Genre;
     private String Rating;
     private String Director;
+
     public Movie(){
 
     }
-//Constructors
-    public Movie(int id, String title, int debut, String genre, String rating, String director) {
-        this.id = id;
+
+    //Constructors
+    public Movie(int mid, String title, int debut, String genre, String rating, String director) {
+        this.mid = mid;
         Title = title;
         Debut = debut;
         Genre = genre;
@@ -20,13 +22,13 @@ public class Movie {
         Director = director;
     }
 
-    //getters/setters
 
-    public int getId() {
-        return id;
+    //getters/setters
+    public int getMid() {
+        return mid;
     }
-    public void setId(int id) {
-        this.id = id;
+    public void setMid(int mid) {
+        this.mid = mid;
     }
     public String getTitle() {
         return Title;
@@ -62,7 +64,7 @@ public class Movie {
     @Override
     public String toString() {
         return "Movie{" +
-                "id=" + id +
+                "mid=" + mid +
                 ", Title='" + Title + '\'' +
                 ", Debut=" + Debut +
                 ", Genre='" + Genre + '\'' +
